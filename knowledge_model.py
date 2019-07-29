@@ -14,7 +14,7 @@ class Knowledge(Base):
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
 	__tablename__ = 'knowledge'
-	article_id = Column(Integer, primery_key = True)
+	article_id = Column(Integer, primary_key = True)
 	name = Column(String)
 	topic = Column(String)
 	rating = Column(Integer)
@@ -28,3 +28,4 @@ class Knowledge(Base):
 					self.topic,
 					self.rating,
 					self.article_id)
+
